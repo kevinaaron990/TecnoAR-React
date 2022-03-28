@@ -1,0 +1,17 @@
+
+span{
+    color: #d8d811;
+    font-weight: 700;
+    font-size: 3rem;
+    
+    
+}
+
+.menu{
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+.menu__item:hover{
+    background-color: #d8d811;
+    
+}
