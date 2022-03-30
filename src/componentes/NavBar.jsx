@@ -1,6 +1,8 @@
 import React from "react";
 import './NavVar.css'
+import CardWidget from "./CardWidget";
 import * as ReactBootstrap from "react-bootstrap"
+
 
 export default function NabVar(){
     return(
@@ -24,7 +26,9 @@ export default function NabVar(){
                     </ReactBootstrap.Nav>
                 </ReactBootstrap.Navbar.Collapse>
                 </ReactBootstrap.Container>
+                <CardWidget/>
             </ReactBootstrap.Navbar>
+
        </nav>
     
     );}
