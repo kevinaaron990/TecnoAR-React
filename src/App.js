@@ -1,6 +1,6 @@
 
 import React from 'react';
-import ItemListContainer from './componentes/ItemListContainer';
+import ItemListContainer from './componentes/Items/ItemListContainer';
 import NabVar from './componentes/NavBar/NavBar';
 
 

@@ -19,8 +19,11 @@ function ItemCount({stock}) {
     }
 }
     function onAdd(){
+        setCount(1)
         alert('agregaste ' + count +  ' productos al carrito')
     }
+
+    
   return (
     <div>
         <div className={s.botones}>
