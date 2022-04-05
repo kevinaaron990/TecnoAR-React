@@ -1,6 +1,6 @@
 import React from "react";
 import './NavVar.css'
-import CardWidget from "./CardWidget";
+import CardWidget from "../CardWidget/CardWidget";
 import * as ReactBootstrap from "react-bootstrap"
 
 

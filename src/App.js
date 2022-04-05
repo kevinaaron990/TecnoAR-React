@@ -1,7 +1,7 @@
 
 import React from 'react';
 import ItemListContainer from './componentes/ItemListContainer';
-import NabVar from './componentes/NavBar';
+import NabVar from './componentes/NavBar/NavBar';
 
 
 function App() {

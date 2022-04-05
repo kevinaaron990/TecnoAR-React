@@ -1,0 +1,17 @@
+.botones{
+    display:flex;
+    justify-content:space-around;
+    height: 50px;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+.contador{
+    color: #d8d811;
+    font-size: 2.5rem;
+}
+.botonAgregar
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
