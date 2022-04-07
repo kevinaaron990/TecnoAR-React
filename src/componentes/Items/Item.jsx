@@ -1,7 +1,8 @@
 
 import React, {useState} from 'react'
-import { Card  } from 'react-bootstrap'
+import { Card, Container } from 'react-bootstrap'
 import ItemCount from "../ItemCount/ItemCount";
+
 
 function Item(productos) {
 
@@ -15,16 +16,18 @@ function Item(productos) {
     
 
   return (
-            <Card key={productos.id} style={{ width: '18rem'}} >
-                <Card.Img variant="top" src={productos.imagen}/>
-                <Card.Body>
+        <Container >
+            <Card key={productos.id} style={{ width: '20rem'}}  >
+                <Card.Img variant="buttom" src={productos.imagen} style={{ height: '20rem'}}/>
+                <Card.Body >
                     <Card.Title>{productos.title}</Card.Title>
                     <Card.Text>Categoria: {productos.description}</Card.Text>
-                    <Card.Text>{productos.price}</Card.Text>
+                    <Card.Text>$ {productos.price}</Card.Text>
                     <Card.Text>{productos.stock}</Card.Text>
                     <ItemCount inicial={0} stock={5} onAdd={onAdd} existente={disponible}/>
                 </Card.Body>
             </Card>
+        </Container>
   )
 }
 
