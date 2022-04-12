@@ -1,7 +1,9 @@
+import { producto } from "./productos";
+
 let condicion = true ;
 
 
-const promesas = (time, task) =>{
+export  const promesaItemList = (time, task) =>{
     return new Promise ((resolve, reject) => {
         setTimeout(() => {
             if(condicion) {
@@ -12,4 +14,13 @@ const promesas = (time, task) =>{
     
     }, time);})}
 
-    export default promesas;
+   
+
+    export const promesaDetails = () =>{
+    return new Promise ((resolve , reject) =>{
+            setTimeout(() => {
+               resolve(producto);
+                reject('error')
+            }, 2000);
+        })
+    }

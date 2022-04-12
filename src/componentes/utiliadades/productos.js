@@ -3,7 +3,7 @@ const productos = [
     
         {
         id: 1,
-        descriptio: "Celular",   
+        description: "Celular",   
         title: "Samsung S22", 
         price: 200000,
         stock : 5,
@@ -71,3 +71,14 @@ const productos = [
 ]
 
 export default productos;
+
+export const producto = {
+        
+                id: 1,
+                description: "Samsung galaxy S22 ULTRA,Pantalla Dynamic AMOLED 2X de 6.8,Cámara delantera de 40Mpx,Batería de 5000mAh,Memoria interna de 256GB.",   
+                title: "Samsung S22", 
+                price: 200000,
+                stock : 5,
+                imagen: "https://media.revistavanityfair.es/photos/6203fb780adc4f6318badd44/1:1/w_1381,h_1381,c_limit/Samsung_Galaxy-S22-Ultra_Burgundy.jpg",
+        }
+
