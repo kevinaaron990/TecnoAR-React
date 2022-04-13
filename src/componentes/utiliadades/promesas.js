@@ -1,4 +1,4 @@
-import { producto } from "./productos";
+
 
 let condicion = true ;
 
@@ -16,11 +16,27 @@ export  const promesaItemList = (time, task) =>{
 
    
 
-    export const promesaDetails = () =>{
-    return new Promise ((resolve , reject) =>{
-            setTimeout(() => {
-               resolve(producto);
-                reject('error')
-            }, 2000);
-        })
-    }
+    //  export const promesaDetails = () =>{
+    //  return new Promise ((resolve , reject) =>{
+    //         setTimeout(() => {
+    //            resolve(productos);
+    //             reject('error')
+    //         }, 2000);
+    //      })
+    // }
+
+     
+    //  export const promesaDetails = (id) =>{
+    //     return new Promise ((resolve , reject) =>{
+    //         setTimeout(() => {
+    //             let articleFilter = productos.filter(e => e.id == id);
+    //             if (articleFilter) {
+    //                 resolve(articleFilter);
+    //             } else {
+    //                 reject("Err");
+    //             }
+    //         }, 1000);
+    //     })
+    // }
+
+    

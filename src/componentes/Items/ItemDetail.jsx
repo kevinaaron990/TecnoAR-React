@@ -4,7 +4,8 @@ import ItemCount from '../ItemCount/ItemCount';
 
 
 
-function ItemDetail({ producto }) {
+
+function ItemDetail({producto}) {
   return (
     <>  <Container>
         <Card style={{ width: '40rem' }}>

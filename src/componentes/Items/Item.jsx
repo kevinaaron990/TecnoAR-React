@@ -2,6 +2,7 @@
 import React, {useState} from 'react'
 import { Card, Container } from 'react-bootstrap'
 import ItemCount from "../ItemCount/ItemCount";
+import { Link } from 'react-router-dom';
 
 
 function Item(productos) {
@@ -21,9 +22,11 @@ function Item(productos) {
                 <Card.Img variant="buttom" src={productos.imagen} style={{ height: '20rem'}}/>
                 <Card.Body >
                     <Card.Title>{productos.title}</Card.Title>
-                    <Card.Text>Categoria: {productos.description}</Card.Text>
                     <Card.Text>$ {productos.price}</Card.Text>
                     <Card.Text>{productos.stock}</Card.Text>
+                    <Card.Text>
+                        <Link to={"/item/id"}>Ver Detalles </Link>
+                    </Card.Text>
                     <ItemCount inicial={0} stock={5} onAdd={onAdd} existente={disponible}/>
                 </Card.Body>
             </Card>

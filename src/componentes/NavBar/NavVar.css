@@ -3,18 +3,34 @@ span{
     color: #d8d811;
     font-weight: 700;
     font-size: 3rem;
+    text-decoration: none;
     
+    
+}
+h1{
+    color: #f0f8ff;
+    text-decoration: none;
     
 }
 
 .menu{
+    
     gap: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+.menu a {
+    text-decoration: none;
+    color: #f0f8ff;
 }
 .menu__item:hover{
     background-color: #d8d811;
     
 }
+a{
+    text-decoration: none;
+}
+
 .logoCarrito{
     width: 60px;
     cursor: pointer;
