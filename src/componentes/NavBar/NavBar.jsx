@@ -13,7 +13,7 @@ export default function NabVar(){
                 <ReactBootstrap.Container>
                 <ReactBootstrap.Navbar.Brand href="#home" className="titulo">
         
-                    <Link to={"/"}><h1>Tecno<span>AR</span></h1></Link>
+                    <Link to={"/"} className="tituloLink"><h1>Tecno<span>AR</span></h1></Link>
                  </ReactBootstrap.Navbar.Brand>
       
                 <ReactBootstrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />

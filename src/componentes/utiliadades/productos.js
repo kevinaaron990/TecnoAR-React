@@ -13,8 +13,16 @@ const productos = [
     
         {
         id: 2,
-        description: "Samsung galaxy S22 ULTRA,Pantalla Dynamic AMOLED 2X de 6.8,Cámara delantera de 40Mpx,Batería de 5000mAh,Memoria interna de 256GB.",
-        title: "Iphone 13", 
+        description: `Iphone 13 
+        -Pantalla Super Retina XDR de 6.1 pulgadas.
+        -Memoria interna: 128 GB
+        -Sistema avanzado de dos cámaras de 12 MP (gran angular y ultra gran angular) con Estilos Fotográficos, HDR Inteligente 4, modo Noche y grabación de video 4K HDR en Dolby Vision.
+        -Cámara frontal TrueDepth de 12 MP con modo Noche y grabación de video 4K HDR en Dolby Vision.
+        -Chip A15 Bionic para un rendimiento fuera de serie.
+        -Resistencia al agua IP68, líder en la industria.
+        -iOS 15 con nuevas funcionalidades para aprovechar tu iPhone al máximo.
+        `,
+        title: "Iphone 13 ", 
         price: 250000,
         stock : 5,
         imagen:"https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone13_hero_09142021_inline.jpg.slideshow-large_2x.jpg",
@@ -22,7 +30,7 @@ const productos = [
 },
         {
         id: 3,
-        description: "Samsung galaxy S22 ULTRA,Pantalla Dynamic AMOLED 2X de 6.8,Cámara delantera de 40Mpx,Batería de 5000mAh,Memoria interna de 256GB.",
+        description: "Motorola Edge 20 -Tamaño de la pantalla: 6.7 Full HD+ 144 Hz.-Capacidad de la batería 4500 mAh.-Memoria interna: 256 GB.-Cámara trasera principal: 108 Mpx.-Cámara frontal principal: 32 Mpx.-Desbloqueo: Huella dactilar y reconocimiento facial.-Memoria RAM 12 GB",
         title: "Motorola Edge 20", 
         price: 100000,
         stock : 5,
@@ -31,7 +39,7 @@ const productos = [
 },       
         {
         id: 4,
-        description: "Samsung galaxy S22 ULTRA,Pantalla Dynamic AMOLED 2X de 6.8,Cámara delantera de 40Mpx,Batería de 5000mAh,Memoria interna de 256GB.",
+        description: "Xiamomi Mi 10 Pro.-Pantalla AMOLED de 6.67 1080 px x 2340 px AMOLED.-Tiene 4 cámaras traseras de 108Mpx/20Mpx/12Mpx/8Mpx.-Procesador Snapdragon 865 Octa-Core de 2.84GHz con 12GB de RAM.-Batería de 4500mAh con carga inalámbrica.-Memoria interna de 512GB.-Con reconocimiento facial y sensor de huella dactilar.        .     ",
         title: "Xiamomi Mi 10 Pro", 
         price: 110000,
         stock : 5,
@@ -41,7 +49,7 @@ const productos = [
     
         {
         id: 5,
-        description: "Celular",  
+        description: "Samsung Galaxy Z Flip3.-Pantalla plegable con una extensión total de 6.7 y resolución de 1080px x 2640px.-Procesador Snapdragon 888 Octa-Core de 2.84GHz con 8GB de RAM.-Tiene 2 cámaras traseras de 12Mpx/12Mpx Cámara delantera de 10Mpx.-Batería de 3300mAh con carga inalámbrica.-Memoria interna de 128GB.-Resistente al agua.-Con sensor de huella dactilar.-Pantalla secundaria táctil de 1.9.",  
         title: "Samsung Galaxy Z Flip3", 
         price: 160000,
         stock : 5,
@@ -51,9 +59,14 @@ const productos = [
     
         {
         id: 6,
-        description: "Samsung galaxy S22 ULTRA,Pantalla Dynamic AMOLED 2X de 6.8,Cámara delantera de 40Mpx,Batería de 5000mAh,Memoria interna de 256GB.",
+        description: `IPhone SE 2020.-Pantalla Retina HD de 4,7 pulgadas.-Clasificación IP67 de resistencia al agua y al polvo (hasta 30 minutos a una profundidad máxima de 1 metro). (3)
+                -Cámara gran angular de 12 MP con modo Retrato, Iluminación de Retrato, Control de Profundidad, HDR Inteligente de última generación y video 4K.
+                -Cámara frontal de 7 MP con modo Retrato, Iluminación de Retrato y Control de Profundidad.
+                -Memoria interna: 128 GB.
+                -Chip A13 Bionic con Neural Engine de tercera generación.
+        `,
         marca: "Apple", 
-        title: "Apple iPhone SE 2020", 
+        title: "IPhone SE 2020", 
         price: 250000,
         stock : 5,
         imagen: "https://i.blogs.es/949d58/iphone-se-family-select-2020/original.jpeg",
@@ -62,7 +75,14 @@ const productos = [
     
         {
         id: 7,
-        description: "Samsung galaxy S22 ULTRA,Pantalla Dynamic AMOLED 2X de 6.8,Cámara delantera de 40Mpx,Batería de 5000mAh,Memoria interna de 256GB.",
+        description: `Moto G200.-Tamaño de la pantalla: 6.8 Full HD 144 Hz.
+        -Cámara trasera principal: 108 Mpx,Camara Frontal :16 Mpx.
+        -Memoria interna 128 GB ,Memoria RAM 8 GB.
+        -Desbloqueo: Huella dactilar y reconocimiento facial.
+        -Capacidad de la batería 5000 mAh.
+        -Modelo del procesadorSnapdragon 888+ 5G
+        `
+        ,
         title: "Moto G200", 
         price: 100000,
         stock : 5,
@@ -73,7 +93,17 @@ const productos = [
         
         {
          id: 8,
-        description: "Samsung galaxy S22 ULTRA,Pantalla Dynamic AMOLED 2X de 6.8,Cámara delantera de 40Mpx,Batería de 5000mAh,Memoria interna de 256GB.",
+        description: `Mac Book PRO:-Chip M1 de Apple que permite un gran avance en el rendimiento de la CPU, GPU y aprendizaje automático.
+        -CPU de 8 núcleos que ofrece un rendimiento hasta 2,8 veces más rápido para ejecutar flujos de trabajo a una velocidad increíble (1).
+        -GPU de 8 núcleos con gráficos hasta 5 veces más veloces para apps y juegos con gráficos avanzados (1).
+        -Neural Engine de 16 núcleos para un aprendizaje automático avanzado.
+        -8 GB RAM de memoria unificada para que todo sea más rápido y fluido.
+        -Almacenamiento SSD 256gb.
+        -Pantalla Retina de 13.3 pulgadas con 500 nits de brillo para que disfrutes imágenes vibrantes y un nivel de detalle increíble (3).
+
+
+        `
+        ,
         title: "Mac Book PRO", 
         price: 400000,
         stock : 5,
@@ -104,13 +134,5 @@ const productos = [
 
 export default productos;
 
-export const producto = {
-        
-                id: 1,
-                description: "Samsung galaxy S22 ULTRA,Pantalla Dynamic AMOLED 2X de 6.8,Cámara delantera de 40Mpx,Batería de 5000mAh,Memoria interna de 256GB.",   
-                title: "Samsung S22", 
-                price: 200000,
-                stock : 5,
-                imagen: "https://media.revistavanityfair.es/photos/6203fb780adc4f6318badd44/1:1/w_1381,h_1381,c_limit/Samsung_Galaxy-S22-Ultra_Burgundy.jpg",
-        }
+
 

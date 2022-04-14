@@ -1,0 +1,23 @@
+.ItemDetail{
+    margin-top: 2rem;
+    
+}
+.ItemDetail__img{
+    width: 40rem;
+    height: 40rem;
+}
+.ItemDetail__body{
+    width: 40rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    
+}
+.ItemDetail__title{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.ItemDetail__price{
+    font-size: 2rem;
+    
+}

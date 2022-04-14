@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from "react";
-
-import productos from "../utiliadades/productos";
 import ItemList from "./ItemList";
 import s from "./ItemListContainer.module.css"
 import { useParams } from "react-router-dom";
-
+import { promesaItemList } from '../utiliadades/promesas'
 
 export default function ItemListContainer(){
 
-    const { id } = useParams()
+   const [loading, setLoading] = useState(true)
     const [items, setItems] = useState([]);
+    const { id } = useParams()
 
     // useEffect(() =>{
     //     promesaItemList(3000, productos)
@@ -17,26 +16,18 @@ export default function ItemListContainer(){
     //     .catch(error => console.log(error));
     // }, [id])
     useEffect(() => {
-
-    
-    const promesaCategory = new Promise((res, rej) =>{
-        setTimeout(() =>{
-            if(id){
-                res(productos.filter(item => item.category === id));
-            }else{
-                res(productos)
-            }
-        },2000)
-    })
-    promesaCategory.then((res) => {
-        setItems(res)
-    })
-},[id])
+        setLoading(true)
+        promesaItemList(id)
+        .then((res) => setItems(res))
+        .catch((error) => console.log(error))
+        .finally(() => {
+            setLoading(false)
+        });
+        }, [id]);
     return(
         <>
-        <div className={s.cardProductos}>
-            <ItemList productos={items} />
-        </div>
+        {loading ? (<h1 className={s.loading}>Cargando Productos....</h1>) : ( <div className={s.cardProductos}><ItemList productos={items} /></div>)}
+       
         </>
     )
 }
