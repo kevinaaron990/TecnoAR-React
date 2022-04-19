@@ -10,6 +10,7 @@ function ItemList({productos}) {
         description={producto.description}
         price={producto.price}
         imagen={producto.imagen}
+        key={producto.id}
         />
     ))
   )

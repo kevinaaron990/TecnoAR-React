@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button'
 import s from "./ItemCount.module.css"
 
-function ItemCount({inicial ,stock , onAdd}) {
+function ItemCount({inicial ,stock , addCart}) {
     
     const [count, setCount] = useState(inicial)
 
@@ -15,25 +15,21 @@ function ItemCount({inicial ,stock , onAdd}) {
     }
     
     function restarCarrito(){
-        if (count > 0){
+        if (count > inicial){
         setCount(count - 1)}
     }
     
   return (
     <div>
         <div className={s.botones}>
-            <Button variant="dark" onClick={restarCarrito}>-
-            </Button>
+            <Button variant="dark" onClick={restarCarrito}>-</Button>
 
             <span className={s.contador}>{count}</span>
 
-            <Button variant="dark"  onClick={sumarCarrito}>+
-            </Button>
-
+            <Button variant="dark"  onClick={sumarCarrito}>+</Button>
         </div>
-       
         <div className={s.botonAgregar}>
-            <Button disabled={count === 0} onClick={( count > stock?null:( ()=> onAdd(count)))} variant="dark">Agregar al Carrito</Button>
+            <Button onClick={()=> addCart(count)} variant="dark">Agregar al Carrito</Button>
         </div>
     </div>
   )
