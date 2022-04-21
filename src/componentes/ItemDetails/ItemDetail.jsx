@@ -14,7 +14,6 @@ function ItemDetail({producto}) {
   const [click, setClick] = useState(false);
 
   const addCart = (cantidad) =>{
-    console.log('productos agregados ',cantidad);
     setCant(cantidad);
     setClick(true)
    
@@ -33,7 +32,7 @@ function ItemDetail({producto}) {
             <Card.Text>Precio Al Contado $ <span className={s.ItemDetail__price}>{producto.price}</span> </Card.Text>
             {click ? 
             <div> <Link to={"/cart"}> <Button variant="dark" style={{ width: '10rem', margin:'2rem'}}> Ir al Carrito </Button> </Link><Button style={{ width: '10rem'}} onClick={() => handleClick()} variant="dark">Seguir comprando</Button> </div>
-             : <ItemCount addCart={addCart} inicial={1} stock={producto.stock} />}
+             : <ItemCount addCart={addCart} inicial={1} stock={producto.stock} producto={producto}/>}
             
           </Card.Body>
         </Card>

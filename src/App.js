@@ -5,11 +5,13 @@ import NabVar from './componentes/NavBar/NavBar';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ItemDetailContainer from './componentes/ItemDetails/ItemDetailContainer';
 import CartContainer from './Cart/CartContainer';
+import ContextProvider from './componentes/CartContext';
 
 
 function App() {
   return (
     <> 
+    <ContextProvider>
       <BrowserRouter>
         <NabVar/>
         <Routes>
@@ -19,6 +21,7 @@ function App() {
           <Route exact path="/cart" element={<CartContainer/>} />
         </Routes>
       </BrowserRouter>
+    </ContextProvider>
     </>
   );
 }

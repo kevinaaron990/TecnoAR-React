@@ -1,7 +1,6 @@
 
 import React from 'react'
 import { Card, Container } from 'react-bootstrap'
-import ItemCount from "../ItemCount/ItemCount";
 import { Link } from 'react-router-dom';
 
 
@@ -22,7 +21,6 @@ function Item(productos) {
                     <Card.Text>
                         <Link to={`/Item/${productos.id}`} style={{ textDecoration: 'none',textAlign:'center',fontWeight:'700'}}><p >Ver Detalles</p></Link>
                     </Card.Text>
-                    <ItemCount inicial={1} stock={5}  />
                 </Card.Body>
             </Card>
         </Container>
