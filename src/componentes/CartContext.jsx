@@ -1,4 +1,5 @@
-import React, { createContext, useState } from 'react'
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { createContext, useState,useEffect } from 'react'
 
 
 export const Context = createContext();
@@ -6,6 +7,15 @@ export const Context = createContext();
 function CartContext({ children }) {
     
     const [cart, setCart] = useState([]);
+    const [cant, setCant] = useState(0)
+
+
+
+    const quantityTotal = () => setCant(cart.reduce((total, item) => (total += item.cantidad),0 ));
+  
+  useEffect(() =>{
+    quantityTotal();
+  }, [cart]);
 
     const addToCart = (product) => {
 
@@ -19,15 +29,24 @@ function CartContext({ children }) {
         }
         console.log(product)
     }
-   
+    const removeItem = (( id ) =>{
+      
+        const newCart = [...cart];
+        let index = newCart.findIndex(el => el.id===id);
+        newCart.splice(index, 1);
+  
+        setCart((newCart));
+      });
 
-    const removeCart = (product) => {
-        setCart(cart.filter((producto) => producto.id !== product.id));
+    const clear = () => {
+        setCart([]);
     }
 
     const buy =() => setCart([]);
+
+
   return (
-    <Context.Provider value={{cart, addToCart, removeCart, buy}}>
+    <Context.Provider value={{cart, addToCart, clear, buy, removeItem,cant}}>
      {children}
     </Context.Provider>
   )
