@@ -10,11 +10,11 @@ import { Button } from 'react-bootstrap';
 
 function ItemDetail({producto}) {
   
-  const [cant, setCant] = useState(0);
+  //const [setCant] = useState(0);
   const [click, setClick] = useState(false);
 
   const addCart = (cantidad) =>{
-    setCant(cantidad);
+   
     setClick(true)
    
 

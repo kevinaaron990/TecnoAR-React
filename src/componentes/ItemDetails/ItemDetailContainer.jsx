@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import ItemDetail from './ItemDetail';
-import { promesaDetails } from '../utiliadades/promesas'
+import { doc, getDoc, getFirestore} from "firebase/firestore";
+// import { promesaDetails } from '../utiliadades/promesas'
 
 
 
@@ -13,15 +14,12 @@ function ItemDetailContainer() {
  const { id } = useParams();
 
  useEffect(() => {
-  promesaDetails(id)
-    .then((res) => {
-      setProducto(res)
-  })
-    .catch((error) => {
-      console.log(error);
+  const db = getFirestore();
+  const productos = doc(db, "productos", id);
+  getDoc(productos).then((res) => {
+    setProducto({id: res.id, ...res.data()});
   });
-
-  },[id]);
+}, [id]);
 
   return (
     
