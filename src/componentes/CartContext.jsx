@@ -12,7 +12,9 @@ function CartContext({ children }) {
 
 
     const quantityTotal = () => setCant(cart.reduce((total, item) => (total += item.cantidad),0 ));
-  
+
+    const valorTotal  = () => setCant(cart.reduce((total, item) => (total += item.cant * item.price),0 ))
+    
   useEffect(() =>{
     quantityTotal();
   }, [cart]);
@@ -46,7 +48,7 @@ function CartContext({ children }) {
 
 
   return (
-    <Context.Provider value={{cart, addToCart, clear, buy, removeItem,cant}}>
+    <Context.Provider value={{cart, addToCart, clear, buy, removeItem,cant,valorTotal}}>
      {children}
     </Context.Provider>
   )

@@ -24,7 +24,9 @@ function Cart({cart, clear, buy, removeItem}) {
       </ListGroup>
       <Card.Body >
           <Link to='/'><Button variant="dark" >Volver Al Catalogo</Button></Link>
-          <Button style={{ margin:'0 1rem' }} variant="dark" onClick={buy}>Finalizar Compra</Button>
+          {cart.length === 0?
+          <Button style={{ margin:'0 1rem' }} variant="dark" onClick={buy}>Finalizar Compra</Button> :
+          <Link to={"/checkOut"} style={{textDecoration:"none"}}><Button variant="dark">Finalizar Compra</Button></Link>}
           <Button variant="dark" onClick={() =>{ removeItem(producto.id)}}>Borrar item </Button>
        </Card.Body>
       </Card>   
