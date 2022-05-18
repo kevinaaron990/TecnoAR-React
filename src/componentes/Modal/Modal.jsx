@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import s from "./Modal.module.css";
+import s from './Modal.module.css';
 import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
@@ -29,9 +29,9 @@ function Modal({ setOpenModal, checkoutCode }) {
   }, [checkoutCode]);
 
   return (
-    <div className={s.modalBackground}>
+    <div className={s.modalFondo}>
       <div className={s.modalContainer}>
-        <div className={s.titleCloseBtn}>
+        <div className={s.botonCerrar}>
           <Link to={"/"}>
             <Button
               onClick={() => {
@@ -42,13 +42,13 @@ function Modal({ setOpenModal, checkoutCode }) {
             </Button>
           </Link>
         </div> 
-        <div className={s.title}>
+        <div className={s.modalTitulo}>
             <h1>Gracias por su compra</h1>
         </div>
-        <div className={s.body}>
+        <div className={s.modalResumen}>
             <h3>Resumen:</h3>
                 {itemCheckout?.items?.map((item) =>{
-                return <div className={s.itemList} key={item.id}>
+                return <div className={s.resumenLista} key={item.id}>
                     <p>Cantidad: {item.cantidad}</p>
                     <p>Producto: {item.title}</p> 
                     <p>Precio: ${item.price}</p> 
@@ -61,7 +61,7 @@ function Modal({ setOpenModal, checkoutCode }) {
 
          
         
-        <div className={s.footer}> 
+        <div className={s.botonContinuar}> 
         <Link style={{textDecoration:"none"}} to={"/"}>
           <Button variant="outlined" style={{color:"#d8d811"}}>Continuar</Button>
         </Link>

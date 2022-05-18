@@ -45,3 +45,10 @@ a{
     color: #f0f8ff;
    
 }
+
+@media (max-width: 480px) {
+    .iconoMenu{
+        margin-right: 2rem;
+        
+    }
+}

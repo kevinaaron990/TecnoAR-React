@@ -16,11 +16,11 @@ export default function NabVar(){
                     <Link to={"/"} className="tituloLink"><h1>Tecno<span>AR</span></h1></Link>
                  </ReactBootstrap.Navbar.Brand>
       
-                <ReactBootstrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <ReactBootstrap.Navbar.Collapse id="responsive-navbar-nav">
-                    <ReactBootstrap.Nav className="me-auto">
+                <ReactBootstrap.Navbar.Toggle aria-controls="responsive-navbar-nav" className="iconoMenu" />
+                <ReactBootstrap.Navbar.Collapse id="responsive-navbar-nav" >
+                    <ReactBootstrap.Nav className="me-auto" >
                     </ReactBootstrap.Nav>
-                    <ReactBootstrap.Nav className="menu">
+                    <ReactBootstrap.Nav className="menu" >
                         <Link to={"/"} className="menu__item"> <li >Inicio</li> </Link>
                         <Link to={"/category/Celular"} className="menu__item"> <li >Celulares</li> </Link>
                         <Link to={"/category/Notebooks"} className="menu__item"> <li >Notebooks</li> </Link>

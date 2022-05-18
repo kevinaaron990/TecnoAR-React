@@ -44,9 +44,9 @@ function CheckOutContainer() {
 
   return (
     
-    <div className={s.formContainer}>
-    <Form className={s.checkoutForm} onSubmit={(e) => { e.preventDefault(); sendOrder(); setModalOpen(true); }}>
-    <h1 className={s.titleForm}>Complete Sus Datos</h1>
+    <div className={s.containerForm}>
+    <Form className={s.formularioBody} onSubmit={(e) => { e.preventDefault(); sendOrder(); setModalOpen(true); }}>
+    <h1 className={s.tituloForm}>Complete Sus Datos</h1>
       <Form.Group className="mb-2">
       <Form.Label >Nombre</Form.Label>
         <Form.Control  type="text" name='name' value={name} onChange={(e) => { setName(e.currentTarget.value) }} required maxLength={100}/>

@@ -1,4 +1,24 @@
-.titleForm {
+.formularioBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  background-color: #131313;
+  margin: 2rem;
+  border-radius: 1rem;
+  
+}
+
+ 
+ .formularioBody Button {
+     font-size: 1.5rem;
+     color: #f3f3f3;
+      width: 80%;
+      margin: 4rem;
+      background-color: #d8d811;
+}
+
+.tituloForm {
     font-size: 2rem;
     margin-bottom:2rem;
     padding: 2rem;
@@ -7,7 +27,7 @@
     width: 100%;
     text-align: center; }
   
-  .formContainer {
+  .containerForm {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,24 +36,33 @@
     
   }
   
-  .checkoutForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    background-color: #131313;
-    margin: 2rem;
-    border-radius: 1rem;
-    
-  }
-  
-   
-   .checkoutForm Button {
-       font-size: 1.5rem;
-       color: #f3f3f3;
-        width: 80%;
-        margin: 4rem;
-        background-color: #d8d811;
-  }
-  
  
+  
+  @media (max-width: 480px) {
+    
+    .formularioBody {
+     
+      width: 80%;
+      background-color: #131313;
+      margin: 2rem;
+      border-radius: 1rem;
+    
+    }
+    
+     
+     .formularioBody Button {
+          
+          margin: 2rem;
+         
+    }
+    .tituloForm {
+      font-size: 1rem;
+      margin-bottom:1rem;
+      padding: 1rem;
+     }
+    
+
+    
+    
+
+  }

@@ -1,6 +1,8 @@
 .ItemDetail{
     margin-top: 2rem;
-    
+    display: grid;
+    width: 80rem;
+   text-align: center;
 }
 .ItemDetail__img{
     width: 40rem;
@@ -19,5 +21,38 @@
 }
 .ItemDetail__price{
     font-size: 2rem;
+    
+}
+
+
+@media (max-width: 480px) {
+    .ItemDetail{
+        width: 380px;
+        grid-template-columns:repeat(1, 1fr);
+        width: 380px;
+         
+    }
+    .ItemDetail__img{
+        height: 10rem;
+        width: 10rem;
+       
+    }
+    .ItemDetail__body{
+        font-size: 1rem;
+        font-weight: 400;
+        display: grid;
+        
+    }
+    .ItemDetail__title{
+        width: 300px;
+    }
+    .ItemDetail__price{
+        font-size: 2rem;
+        
+    }
+    .ItemDetail__descripcion{
+        width: 400px;
+        
+    }
     
 }
