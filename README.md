@@ -14,8 +14,8 @@
 - Enviar Datos de la compra y del usuario a la base de datos 
 
 ### Librerías
-- **React Bootstrap** 
-- **Material UI** 
+- **React Bootstrap** Para la Navbar y las Carts 
+- **Material UI** Utilizado Para Botones y iconos 
 
 
 ### Utilizar Proyecto localmente
