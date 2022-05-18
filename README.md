@@ -2,8 +2,8 @@
 
 # React E-Commerce Proyecto final con React en CoderHouse
 
-### Autor: Kevin Aaron Horvath
-### https://github.com/kevinaaron990
+## Autor: Kevin Aaron Horvath
+
 
 ### Gif
 ![](tecnoARdemo.gif)
@@ -18,7 +18,7 @@
 - **Material UI** 
 
 
-### Cómo utilizar Proyecto localmente
+### Utilizar Proyecto localmente
 Clonar, ingresar e instalar dependencias
 ``` bash
 git clone https://github.com/kevinaaron990/TecnoAR-React
@@ -29,3 +29,6 @@ Iniciar en servidor local
 ``` bash
 npm start
 ```
+### Proyecto subido
+https://tecnoar-ecommerce.web.app/
+https://github.com/kevinaaron990
