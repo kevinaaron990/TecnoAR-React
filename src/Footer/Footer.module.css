@@ -1,0 +1,26 @@
+.footer {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity));
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:10rem;
+  
+  }
+
+  .link {
+    color: #FFFF;
+    list-style: none;
+    font-size: 1.1rem;
+    
+  }
+  .link p {
+      font-size: 3rem;
+      font-weight: 500;
+        line-height: 1.2;
+  }
+  .link:hover {
+    color:rgb(223, 193, 0);
+  }
+  

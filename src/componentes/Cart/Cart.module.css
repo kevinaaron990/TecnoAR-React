@@ -1,0 +1,127 @@
+.cartContainer {
+    z-index: 1000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.5rem;
+    
+  }
+  
+  .cartTitle {
+    font-size: 3rem; 
+    color: #131313;
+    text-align: center;
+    border-bottom: solid #131313;
+   width: 100%;
+    padding-bottom: 1rem;
+    margin:1rem;
+  }
+  
+  .cartList {
+    background-color: rgb(232, 232, 232);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    
+    width: 80vw;;
+   
+  }
+  
+  .cartNotification {
+    text-align: center;
+    color: rgb(130, 126, 126);
+    font-size: 3rem;
+    margin: 8rem;
+  }
+  
+  .cartTotalSection {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+  }
+  
+  .cartTotalSection Button {
+    width: 30rem;
+    margin: 1rem;
+    background-color:#131313;
+    color: #d8d811;
+  }
+  
+  .cartItem {
+    display : flex;
+    justify-content:flex-start;
+    align-items:center;
+    padding: 2rem;
+    border-bottom: solid #131313;
+    
+  }
+  
+  .priceItem {
+        margin-left: 5rem;
+  }
+  .cartItem h2 {
+      font-size: 1.5rem;
+    
+  }
+  
+  .cartItem p {
+    color: #d8d811;
+    font-size:1.3rem;
+    text-align: center;
+  }
+  
+  
+  .cartTotalSection h3 { 
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .cartTotalSection p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  /** responsive*/
+
+  
+  @media (min-width: 1200px) {
+    .cartItem {
+      flex-direction: row; 
+      margin: 0rem 8rem;
+      width:50vw;
+      
+    }
+  
+    .cartList {
+      width:70vw;
+    }
+  
+    .cartItem img {
+      width: 10vw;
+      margin-right: 1rem;
+    }
+  
+    .cartTotalSection {
+      width: 55vw;
+      align-items: flex-end;
+    }
+  
+    .cartItem h2 {
+      width: 20%;
+      padding-right: 5rem;
+    }
+  
+    .priceItem {
+      padding-right: 5rem;
+      width:10%;
+    }
+  
+    .quantityItem {
+      padding-right: 5rem;
+      width:10%;
+    
+    }
+    
+  
+  }

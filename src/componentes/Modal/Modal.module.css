@@ -1,0 +1,79 @@
+/*Modal*/
+.modalBackground {
+  width: 100vw;
+  height: 110vh;
+  background-color: rgba(225, 214, 214, 0.722);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+
+  background-color: #131313;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  padding: 2rem;
+  width: 80rem;
+  height: 40rem;
+
+}
+
+.modalContainer .title {
+  display: inline-block;
+  text-align: center;
+ 
+   
+}
+
+.modalContainer .title p {
+  color: #d8d811;
+  font-size: 1.2rem; 
+  margin: 2rem;
+  padding:1rem;
+  
+  
+}
+
+.modalContainer h1 {
+  font-size: 3rem; 
+  color: #d8d811;
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content:end;
+ 
+}
+
+.titleCloseBtn button {
+  cursor: pointer;
+  color: #d8d811;
+}
+
+.modalContainer .body {
+  font-size: 1.5rem;
+  text-align: center;
+  overflow: auto;
+  margin-bottom:1rem;
+}
+
+.modalContainer .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+/*Lista de items*/
+.itemList {
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid white;
+}
+
+.itemList p {
+  width: 100%;
+
+}

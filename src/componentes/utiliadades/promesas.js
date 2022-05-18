@@ -21,7 +21,7 @@ export const promesaItemList = (id) => {
         const productosFilter = productos.filter((producto) => producto.category === id);
         setTimeout(() => {
             id ? res(productosFilter) : res(productos)
-        },2000)
+        },1000)
     })
 }
 
